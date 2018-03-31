@@ -25,7 +25,8 @@ public class Ex2 {
             } while(n < 0);
             System.out.printf("Multiplication table of %d:\n",n);
             while(i <= 10){
-                System.out.printf("%d\tx\t%d\t=\t%d\n", n, i, n * i);
+                String s = String.format("%d\tx\t%d\t=\t%d\n", n, i, n * i);
+                System.out.println(s);
                 i++;
             }
             count++;
