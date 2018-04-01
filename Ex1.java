@@ -1,8 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//Nhấp Ctrl + Shift + F để clean code
+
 package ex1;
 
 import java.util.Scanner;
@@ -11,7 +8,7 @@ public class Ex1 {
     
 public static void main(String[] args) {
 Scanner sc = new Scanner(System.in);
-int n = 0, number = 0;
+int n = 0, number = 0; //biến này để là gì không hiểu
 do{
    try{
        do{
@@ -20,14 +17,14 @@ do{
         if(n <= 0)
             System.out.println("Please input a positive number!");
        }while(n <= 0);
-    int count = 0;
-    int num = 2;
+    int count = 0; // hạn chế khai báo biến trong vòng lặp
+    int num = 2;    // _____ nt ______
     while(count != n) { 
-    boolean prime = true;
+    boolean prime = true;   //______ nt ________
     for (int i = 2; i <= Math.sqrt(num); i++) { 
         if (num % i == 0) {
             prime = false; 
-            break;
+            break; 
         }
 
     }
@@ -35,13 +32,13 @@ do{
         count++;
         System.out.printf("%d ", num);
     }
-    num++;
-    number++;
+    num++; //không hiểu
+    number++; //
 }
     }
    catch(Exception ex){
        System.out.println("Please input a number!");
-       sc.next();
+       sc.next(); //không hiểu
    }
 }while(number == 0);
 }
